@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form id="flightForm">
+      <label for="airline">Airline:</label>
+      <input type="text" id="airline" required />
+
+      <label for="flightNumber">Flight Number:</label>
+      <input type="number" id="flightNumber" required />
+
+      <label for="airport">Airport:</label>
+      <input type="text" id="airport" required />
+
+      <label for="departureDate">Departure Date:</label>
+      <input type="text" id="departureDate" placeholder="MM/DD/YYYY" required />
+
+      <label for="arrivalDate">Arrival Date:</label>
+      <input type="text" id="arrivalDate" placeholder="MM/DD/YYYY" required />
+
+      <label for="departureTime">Departure Time:</label>
+      <input
+        type="text"
+        id="departureTime"
+        placeholder="HH:MM AM/PM"
+        required
+      />
+
+      <label for="arrivalTime">Arrival Time:</label>
+      <input type="text" id="arrivalTime" placeholder="HH:MM AM/PM" required />
+
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="flightInfoContainer"></div>
+
+    <!-- Arrival Board -->
+    <div id="arrivalBoard" class="flight-board">
+      <h2>Arrival Information Board</h2>
+      <div class="flight-item">
+        <p>Flight Number: 123</p>
+        <p>Airline: Delta</p>
+        <p>Arrival Airport: JFK</p>
+        <p>Arrival Date: 2/8/2024</p>
+        <p>Arrival Time: 10:24 PM</p>
+      </div>
+    </div>
+
+    <div id="departureBoard" class="flight-board hidden">
+      <h2>Departure Information Board</h2>
+      <div class="flight-item">
+        <p>Flight Number: 456</p>
+        <p>Airline: American</p>
+        <p>Departure Airport: LAX</p>
+        <p>Departure Date: 2/9/2024</p>
+        <p>Departure Time: 8:00 AM</p>
+      </div>
+    </div>
+  </body>
+  <script src="./js/scripts.js"></script>
+</html>
