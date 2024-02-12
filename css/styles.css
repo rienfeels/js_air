@@ -7,3 +7,21 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #4c84d5,
+    #459bda,
+    #58b0db,
+    #79c2da,
+    #9ed3db,
+    #a1d2d5,
+    #a5d0d0,
+    #a9cecb,
+    #8bbbb7,
+    #6da9a4,
+    #4e9691,
+    #28847f
+  );
+}
